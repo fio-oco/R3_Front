@@ -1,0 +1,244 @@
+#root {
+  max-width: 1280px;
+  margin: 0;
+  padding: 0;
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background-container {
+  background: url('../media/BackgroundLanding.jpg'); 
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #030303;
+  overflow-y: auto; 
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: blue;
+  cursor: pointer;
+  color: white;
+  transition: border-color 0.25s;
+}
+button:hover {
+  background-color: rgb(61, 117, 94);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+.register{
+  background-color: rgb(222, 222, 243, 0.75);
+  padding-top: 20px;
+  border-radius: 8px;
+  width: 350px;
+  height: auto;
+  padding: 20px;
+  margin-left: 80px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+}
+.register input {
+  margin-bottom: 10px; 
+  padding: 8px; 
+}
+
+.login{
+  background-color: rgb(222, 222, 243, 0.75);
+  padding-top: 20px;
+  border-radius: 8px;
+  border: 3px;
+  width: 300px;
+  height: auto;
+  padding: 20px;
+  margin-left: 80px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.login h1 {
+  align-self: center;
+}
+.login input {
+  margin-bottom: 10px; 
+  padding: 8px; 
+}
+
+.login button {
+  margin-top: 10px; 
+  padding: 10px 20px; 
+  align-self: "center";
+}
+
+.register h1{
+text-align: center;
+}
+
+.new-climb-form{
+    background-color: rgb(222, 222, 243, 0.75);
+    padding: 20px;
+    border-radius: 8px;
+    border: 3px;
+    min-width: 400px;
+    width: fit-content;
+    height: auto;
+    padding: 20px;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.new-climb-form input {
+  margin-bottom: 10px; 
+  padding: 8px; 
+}
+
+.new-climb-form h1{
+  text-align: center;
+  }
+
+input {
+  writing-mode: horizontal-tb !important;
+padding: 7px;
+  padding-inline: 2px;
+  border-radius: 5px;
+
+}
+
+.dynamic-input {
+  width: auto; 
+  height: auto;
+  min-width: 50px; 
+  max-width: 300px; 
+}
+
+.image-preview {
+  width: 350px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.top-buttons{
+  display:flex;
+  flex-wrap: nowrap;
+}
+
+.climb-name {
+  max-width: 450px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.top-info-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-color: rgb(168, 206, 206);
+  border: 5px;
+  margin: '5px';
+}
+.colour-band{
+  width: 100%;
+  height: 10px;
+  background-color: rgb(168, 206, 206);
+}
+
+button{
+  background-color: rgba(24, 105, 105, 0.5);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.icon{
+  color: rgb(12, 103, 103);
+}
+
+.header {
+ /*  position: fixed; */
+  bottom:auto;
+  width: 100%;
+  left: 0;
+  background-color: rgb(11, 88, 105);
+  top: 0%;
+  color: whitesmoke;
+}
+
+.footer {
+  position: relative;
+  bottom: 0%;
+  width: 100%;
+  background-color: rgb(11, 88, 105);
+  left: 0;
+  margin: 0;
+ 
+  padding: 10px;
+  top: auto;
+  color: rgb(249, 236, 236)
+
+}
+
+.landing-content {
+  background-color: rgba(255, 255, 255, 0.9); 
+  border: 1px solid #fff; 
+  border-radius: 8px; 
+  padding: 20px; 
+}
+
+.card {
+  background-color: 'rgba(255, 255, 255, 0.9)';
+  border: '1px solid #fff';
+  border-radius: '8px';
+  padding: '20px',
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(254, 252, 252, 0.8);
+  color: rgb(16, 16, 16);
+  padding: 5px;
+  text-align: center;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none; /* Prevents the text from blocking hover */
+  z-index: 1; 
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-text.hidden  {
+  opacity: 0; /* Hide text on hover */
+}
+
